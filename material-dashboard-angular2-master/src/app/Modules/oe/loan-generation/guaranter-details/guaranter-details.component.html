@@ -1,0 +1,165 @@
+<mat-card >
+    
+        <mat-card-title>
+            Guaranter Details
+        </mat-card-title>
+    
+        <mat-card-content>
+            <form>
+                <table>
+                        <tr>
+                                <td>
+                                    <mat-form-field class="demo-full-width">
+                                        <input matInput type="number" matInput placeholder="Guaranter Id" [(ngModel)]="guaranterDetails.g_id" [ngModelOptions]="{standalone: true}">
+                                    </mat-form-field>
+                                   </td>
+                        </tr>
+                           
+                        
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                              <input matInput placeholder="Guaranter-Primary-Id-value" [(ngModel)]="guaranterDetails.g_p_value" [ngModelOptions]="{standalone: true}">
+   
+                                </mat-form-field>
+                               </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    <input matInput placeholder="Guaranter-Name" [(ngModel)]="guaranterDetails.g_name" [ngModelOptions]="{standalone: true}">
+                                    
+                                </mat-form-field>
+                               </td>
+                        </tr>
+                   
+
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    
+                                    <input  matInput type="number" matInput placeholder="Guaranter primary id" [(ngModel)]="guaranterDetails.g_p_id" [ngModelOptions]="{standalone: true}" ng-pattern="onlyNumbers" >
+
+                                </mat-form-field>
+                               </td>
+                        </tr>
+  
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    
+                            
+                                    <input matInput type="number" matInput placeholder="Guaranter-Secondary-Id" [(ngModel)]="guaranterDetails.g_s_id" [ngModelOptions]="{standalone: true}" ng-pattern="onlyNumbers">
+                                </mat-form-field>
+                               </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    
+                                    <input matInput placeholder="Guaranter-Secondary-Id-Value" [(ngModel)]="guaranterDetails.g_s_value" [ngModelOptions]="{standalone: true}">
+                              
+                                </mat-form-field>
+                               </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    
+                                    <input matInput type="number" matInput placeholder="Guaranter phone number" [(ngModel)]="guaranterDetails.g_mobileno" ng-pattern="onlyNumbers" [ngModelOptions]="{standalone: true}">
+              
+                                </mat-form-field>
+                               </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    
+                                    <input matInput placeholder="Guaranter Email-id" [(ngModel)]="guaranterDetails.g_emailid" [ngModelOptions]="{standalone: true}">         
+                                </mat-form-field>
+                               </td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    <input matInput placeholder="Guaranter Address" [(ngModel)]="guaranterDetails.g_address" [ngModelOptions]="{standalone: true}">
+                    
+                                </mat-form-field>
+                               </td>
+                        </tr>
+
+                        
+                        
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    
+                                    <input matInput placeholder="Guaranter Occupation" [(ngModel)]="guaranterDetails.g_occupation" [ngModelOptions]="{standalone: true}">
+                                </mat-form-field>
+                               </td>
+                        </tr>
+  
+
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    
+                                    <input matInput placeholder="Guaranter Gender" [(ngModel)]="guaranterDetails.g_gender" [ngModelOptions]="{standalone: true}">
+                                </mat-form-field>
+                               </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    
+                                    <input matInput placeholder="Guaranter DOB" [(ngModel)]="guaranterDetails.g_dob" [ngModelOptions]="{standalone: true}">
+                                </mat-form-field>
+                               </td>
+                        </tr>
+  
+  
+
+                        <tr>
+                            <td colspan="2" class="content-center">
+                                <button mat-raised-button color="accent" (click)="save(guaranterDetails)">Submit</button>&nbsp;
+                                <button mat-raised-button color="accent" (click)="PreviewData(guaranterDetails)">Preview Data</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </mat-card-content>
+        </mat-card>
+        
+
+  
+
+  
+
+<!-- 
+  <div class="form-group col-md-6">
+    <mat-form-field>
+      <input matInput placeholder="Gender" [(ngModel)]="guaranterDetails.g_gender">
+    </mat-form-field>
+  </div>
+
+
+  <div class="form-group col-md-6">
+    <mat-form-field>
+      <input matInput placeholder="Date Of Birth" [(ngModel)]="guaranterDetails.g_dob">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group col-md-6">
+     <button type="submit" class="btn btn-success" (click)="save(guaranterDetails)">Submit</button> -->
+    <!-- <button type="submit" class="btn btn-success" (click)="save(guaranterDetails)">submit....</button> -->
+    <!-- <button  class="btn btn-success" (click)="PreviewData(guaranterDetails)">Preview Data</button>
+  -->
+
+
+ 

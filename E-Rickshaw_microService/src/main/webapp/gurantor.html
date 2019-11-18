@@ -1,0 +1,115 @@
+<mat-card >
+    
+    <mat-card-title>
+        Vechical Details
+    </mat-card-title>
+
+    <mat-card-content>
+        <form>
+            <table>
+                    <tr>
+                            <td>
+                                <mat-form-field class="demo-full-width">
+                                    <input matInput type="number" placeholder="Customer Id" [(ngModel)]="vLoan.c_id" name="customerId" ng-pattern="onlyNumbers">
+                                </mat-form-field>
+                                
+                            </td>
+                        </tr>
+                       
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput type="number" placeholder="Vechical Id" [(ngModel)]="vLoan.vechical_id" name="v_id">
+                        </mat-form-field>
+                        
+                    </td>
+                </tr>
+
+                    <tr>    
+                      <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Vechical Company Name" [(ngModel)]="vLoan.vechical_name"
+                                name="v_name">
+                        </mat-form-field>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <!-- <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Vechical model" [(ngModel)]="vLoan.vechical_model"
+                                name="v_model">
+                        </mat-form-field>
+                        
+                    </td> -->
+
+                    <td>
+                            <mat-form-field class="demo-full-width">
+                                    <mat-label>Vechical model</mat-label>
+                                    <select matNativeControl required>
+                                      <option value="Electric Rickshaw">Mahindra Treo </option>
+                                      <option value="Electric Rickshaw">Etron</option>
+                                      <option value="Electric Rickshaw">Yatri</option>
+                        
+                                    </select>
+                                  </mat-form-field>
+                            </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Vechical make" [(ngModel)]="vLoan.vechical_make"
+                                name="v_make">
+                        </mat-form-field>
+                        
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <!-- <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Vechical type" [(ngModel)]="vLoan.vechical_type"
+                                name="v_type">
+                        </mat-form-field>
+                    
+                    </td> -->
+                    <td>
+                    <mat-form-field class="demo-full-width">
+                            <mat-label>Vechical type</mat-label>
+                            <select matNativeControl required>
+                              <option value="Electric Rickshaw">E-SFT</option>
+                              <option value="Electric Rickshaw">E-HRT</option>
+                              <option value="Electric Rickshaw">E-MAX</option>
+                
+                            </select>
+                          </mat-form-field>
+                    </td>
+                </tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Dealer id" [(ngModel)]="vLoan.dealer_id"
+                                name="d_id" required>
+                        </mat-form-field>
+                        
+                    </td>
+                 
+
+
+                <tr>
+                    <td colspan="2" class="content-center">
+                        <button mat-raised-button color="accent" (click)="save(vLoan)">Submit</button>&nbsp;
+                        <button mat-raised-button color="accent" (click)="clear()">Clear</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </mat-card-content>
+</mat-card>
+
+
+
+
+
+}
+
+

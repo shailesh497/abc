@@ -1,0 +1,31 @@
+<br>
+<br>
+<br>
+
+
+<mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Guaranter form preview</mat-card-title>
+          </mat-card-header>
+<!-- <h3> Guaranter form preview</h3> -->
+
+
+        Guaranter  Id:            {{guaranterDetails.g_id}}<br>
+        Guaranter Name:           {{guaranterDetails.g_name}}<br>
+        Guaranter Primary Id:     {{guaranterDetails.g_p_id}}<br>
+        Guaranter Primary Value:  {{guaranterDetails.g_p_value}}<br>
+        Guaranter Secondary Id:   {{guaranterDetails.g_s_id}}<br>
+        Guaranter Secondary Value:{{guaranterDetails.g_s_value}}<br>
+        Guaranter Mobile Number:  {{guaranterDetails.g_mobileno}}<br>
+        Guaranter Email Id:       {{guaranterDetails.g_emailid}}<br>
+        Guaranter Address:        {{guaranterDetails.g_address}}<br>
+        Guaranter Occupation:     {{guaranterDetails.g_occupation}}<br>
+        Guaranter Gender:         {{guaranterDetails.g_gender}}<br>
+        Guaranter Date Of Birth:  {{guaranterDetails.g_dob}}<br>
+
+        <br>
+<button type="submit" class="btn btn-success" (click)="save(guaranterDetails)">submit....</button>
+&nbsp;
+<button class="btn btn-success" (click)="editData(guaranterDetails)">Edit</button>
+</mat-card>
